@@ -66,7 +66,7 @@ Content-Type: text/html; charset="UTF-8"
 <body>
     <div class="container">
         <h2>Intento de acceso sospechoso</h2>
-        <p>Detectamos un intento de inicio de sesión en tu cuenta desde una ubicación desconocida.</p>
+        <p>Hemos detectado un intento de inicio de sesión en tu cuenta desde una ubicación desconocida. Si no has sido tú quien ha iniciado sesión, te sugerimos que revises la actividad de tu cuenta.</p>
         <p><strong>Detalles del intento:</strong></p>
         <ul>
             <li>Ubicación: España</li>
