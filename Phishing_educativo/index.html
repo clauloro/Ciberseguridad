@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Iniciar sesión</title>
+    <link rel="icon" type="image/png" href="https://ssl.gstatic.com/accounts/ui/logo_2x.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 360px;
+            margin: auto;
+            text-align: left;
+        }
+        .logo {
+            width: 75px;
+            display: block;
+            margin: auto;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #202124;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dadce0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #1669c1;
+        }
+        .link {
+            display: block;
+            margin-top: 15px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #5f6368;
+            text-align: center;
+        }
+        .warning {
+            color: red;
+            font-size: 14px;
+            display: none;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Logo" class="logo">
+        <div class="title">Iniciar sesión</div>
+        <form id="login-form">
+            <input type="text" class="input-field" placeholder="Correo electrónico o teléfono" required><br>
+            <input type="password" class="input-field" placeholder="Contraseña" required><br>
+            <button type="submit" class="button">Siguiente</button>
+        </form>
+        <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+        <p class="footer">¿No es tu computadora? Usa el modo invitado para navegar de forma privada. <a href="#" class="link">Más información</a></p>
+        <p class="footer">© 2025 Google LLC</p>
+        <p class="warning" id="warning-message">⚠ Este es un intento de phishing educativo. No ingreses datos reales.</p>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("warning-message").style.display = "block";
+        });
+    </script>
+</body>
+</html>
